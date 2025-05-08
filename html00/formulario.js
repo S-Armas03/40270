@@ -20,5 +20,13 @@ boton.addEventListener("click",
 
         console.log(user.value)
         console.log(password.value)
+
+        user.setAttribute("name", "q")
+        password.setAttribute("name", "yyy")
+
+        let formulario = document.getElementsByTagName("form")
+        formulario[0].setAttribute("action", "https://www.google.com/search")
+        console.log(formulario)
+        formulario[0].submit()
     }
 )
